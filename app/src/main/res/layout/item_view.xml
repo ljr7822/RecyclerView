@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_73"
+    android:layout_margin="@dimen/dp_3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_5">
+
+        <ImageView
+            android:id="@+id/icon_image_view"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/username_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/icon_image_view"
+            android:text="用户名"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/message_text_view"
+            android:textSize="@dimen/sp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_text_view"
+            android:layout_toEndOf="@id/icon_image_view"
+            android:text="消息" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
