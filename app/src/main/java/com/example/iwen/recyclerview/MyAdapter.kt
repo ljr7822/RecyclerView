@@ -9,15 +9,18 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_view.view.*
 
 /**
+ * 适配器
+ *
  * author : Iwen大大怪
  * create : 2020/11/8 9:32
  */
-class MyAdapter(private val data: MutableList<Int>): RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+class MyAdapter(private val data: MutableList<Int>) :
+    RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
-    class MyViewHolder(itemView:View): RecyclerView.ViewHolder(itemView){
-        val image:ImageView = itemView.icon_image_view
-        val username:TextView = itemView.username_text_view
-        val message:TextView = itemView.message_text_view
+    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val image: ImageView = itemView.icon_image_view
+        val username: TextView = itemView.username_text_view
+        val message: TextView = itemView.message_text_view
     }
 
     // 确定每一个item的具体视图
