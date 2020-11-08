@@ -23,7 +23,9 @@ class MainActivity : AppCompatActivity() {
             this,
             LinearLayoutManager.VERTICAL,
             false)
-        // 分割线
+        // 瀑布布局
+//        mBinding?.mRecyclerView?.layoutManager = StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
+                // 分割线
 //        mBinding?.mRecyclerView?.addItemDecoration(
 //            DividerItemDecoration(this,DividerItemDecoration.VERTICAL))
         // 确定数据源
